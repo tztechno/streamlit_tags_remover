@@ -8,13 +8,13 @@ text = st.text_area("Input", key=text_area_key)
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    remove_newlines = st.checkbox("Newlines")
+    remove_newlines = st.checkbox("Newlines", value=True)
 with col2:
-    remove_tabs = st.checkbox("Tabs")
+    remove_tabs = st.checkbox("Tabs", value=True)
 with col3:
-    remove_leading_trailing_spaces = st.checkbox("Lead/Trail Spaces")
+    remove_leading_trailing_spaces = st.checkbox("Lead/Trail Spaces", value=True)
 with col4:
-    remove_all_spaces = st.checkbox("All Spaces")
+    remove_all_spaces = st.checkbox("All Spaces", value=True)
 
 def remover(text):
     if remove_newlines:
